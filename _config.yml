@@ -5,7 +5,8 @@ description: 欢迎来到我的个人站~
 # 头像里面的标题
 avatarTitle: john
 # 头像里面的描述
-avatarDesc: 神经网络结构搜索
+avatarDesc: 神经网络结构搜索(Nas)
+
 url: "https://cuiguangwu.github.io"
 
 # Comment
