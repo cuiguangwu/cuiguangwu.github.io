@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Rasa NLU及自定义NLU组件"
+title: "pytorch安装"
 date: 2018-12-27
-description: "介绍 Rasa NLU以及自定义NLU组件的方法"
+description: "介绍 pytorch安装"
 tag: Rasa
 
 ---
