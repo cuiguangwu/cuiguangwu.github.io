@@ -7,7 +7,7 @@ title: 关于我
 
 <p> 
 
-博客源码在 <a target="_blank" href='https://github.com/A-light/cui.github.io'>Github</a> 上，欢迎star，谢谢~
+博客源码在 <a target="_blank" href='https://github.com/cuiguangwu/cuiguangwu.github.io'>Github</a> 上，欢迎star，谢谢~
 
 点击每页最下面的github图标，就可以进去仓库star了。
 
