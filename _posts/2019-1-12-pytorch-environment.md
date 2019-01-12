@@ -34,11 +34,11 @@ pytorch，其下载地址和安装方式见[[4]](https://pytorch.org/)
 `conda create -n pytorch python=3.6`   
 安装完成后，为了以后安装的三方包的速度，需要更改conda源，命令和配置如下。  
 `gedit ~/.condarc`  
-<code>
-  channels:  
-	&#8195;&#8195;https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free  
-  	&#8195;&#8195;https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main  
-	&#8195;&#8195;defaults  
+<code>  
+channels:    
+&#8195;&#8195;https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free  
+&#8195;&#8195;https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main  
+&#8195;&#8195;defaults  
 show_channel_urls: true
 </code>  
 接下来利用source命令对pytorch虚拟环境进行激活，命令详情如下。  
@@ -51,13 +51,13 @@ pip.conf内容如下：
 index-url = http://mirrors.aliyun.com/pypi/simple  
 [install]  
 trusted-host = mirrors.aliyun.com
-<p>
+<p>   
 然后利用pip list进行查看包的版本包括pip的版本，如果版本太低则需要进行更新，pip更新命令详情如下，其他的类似。  
 </p>
 `pip  install --upgrade pip`  
 最后安装pytorch，命令详情如下：  
 `pip install torch torchvision`
-<p>
+<p>  
 &#8195;&#8195;注意：用conda装pytorch，也能成功但是版本会<font color="#FF69B4">比较低</font>，有些函数和属性不支持，建议用pip安装。
 </p>
 接下来进行验证，如果显示相关版本，则pytorch安装成功，否则则需重装，命令详情如下。  
