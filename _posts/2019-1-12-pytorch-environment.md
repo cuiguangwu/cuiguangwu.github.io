@@ -3,7 +3,7 @@
 系统是ubuntu 16.04 显卡是4*RTX2080
 ## 软件环境 ##
 CUDA Version 9.0，CUDNN Version 7.4  
-CUDA和CUDNN分别可以从官网下载，具体地址[[1]](https://developer.nvidia.com/cuda-90-download-archive "With a Title")[[2]](https://developer.nvidia.com/cudnn "With a Title").由于cudnn需要注册登录，没注册登录的同学可以直接[百度云](https://pan.baidu.com/s/1efrWr9Qn8pTu8vDJrSmCsg)，提取码:6zz6。   
+CUDA和CUDNN分别可以从官网下载，具体地址[[1]](https://developer.nvidia.com/cuda-90-download-archive "With a Title")[[2]](https://developer.nvidia.com/cudnn "With a Title").由于cudnn需要注册登录，不想注册登录的同学，可以直接点击这里[百度云](https://pan.baidu.com/s/1efrWr9Qn8pTu8vDJrSmCsg)，提取码:6zz6。   
 Anaconda Version 4.5.11下载地址[[3]](https://www.anaconda.com/download/)     
 pytorch，其下载地址和安装方式见[[4]](https://pytorch.org/)
 ## 安装过程 ##
