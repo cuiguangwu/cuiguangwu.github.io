@@ -3,11 +3,11 @@
 系统是ubuntu 16.04 显卡是4*RTX2080
 ## 软件环境 ##
 CUDA Version 9.0，CUDNN Version 7.4  
-CUDA和CUDNN分别可以从官网下载，具体地址[[1]](https://developer.nvidia.com/cuda-90-download-archive "With a Title")[[2]](https://developer.nvidia.com/cudnn "With a Title").由于cudnn需要注册登录，不想注册登录的同学，可以直接点击这里[百度云](https://pan.baidu.com/s/1efrWr9Qn8pTu8vDJrSmCsg)，提取码:6zz6。   
+CUDA和CUDNN分别可以从官网下载，具体地址[[1]](https://developer.nvidia.com/cuda-90-download-archive "With a Title")[[2]](https://developer.nvidia.com/cudnn "With a Title").由于cudnn需要注册登录才能下载，不想注册登录的同学，可以直接点击这里[百度云](https://pan.baidu.com/s/1efrWr9Qn8pTu8vDJrSmCsg)，提取码:6zz6。   
 Anaconda Version 4.5.11下载地址[[3]](https://www.anaconda.com/download/)     
-pytorch，其下载地址和安装方式见[[4]](https://pytorch.org/)
+Pytorch，其下载地址和安装方式见[[4]](https://pytorch.org/)
 ## 安装过程 ##
-声明：博主是第一次安装搭建深度学习服务器  
+声明：博主是第一次安装搭建深度学习服务器并成功完成，以此教程引导，望大家都能顺利搭建成功，避免踩坑。  
 &#8195;&#8195;首先你得确认你的电脑的显卡驱动是否安装，使用nvidia-smi命令进行确认，如果已经安装会出现显卡相关信息，否则需要去nvidia官网下载合适的驱动进行安装，安装时后要注意相关事项不然会无限重启（坑）。接下来，安装CUDA，找到你存放你下载文件的文件夹，使用以下命令进行安装。安装完成后，需要配置环境变量,步骤如下。   
 `sudo sh cuda_9.0.176_384.81_linux.run`<br/>
 `sudo gedit ~/.bashrc`<br/>
@@ -44,7 +44,7 @@ show_channel_urls: true<br/>
 </code>  
 接下来利用source命令对pytorch虚拟环境进行激活，命令详情如下。  
 `source activate pytorch`  
-再接下来更改pip的源，命令详情如下。  
+同理，再接下来修改pip的源，命令详情如下。  
 sudo mkdir ~/.pip/  
 sudo gedit ~/.pip/pip.conf  
 pip.conf内容如下：  
@@ -68,10 +68,10 @@ trusted-host = mirrors.aliyun.com
 接下来进行验证，如果显示相关版本，则pytorch安装成功，否则则需重装，命令详情如下。  
 `import torch`  
 `torch.__version__`  
-最后根据自身需要安装ipython和jupyter，命令详情如下。<br/>
+根据自身需要安装ipython和jupyter，命令详情如下。<br/>
 `pip install ipython`  
 `pip install jupyter`  
-最后安装shh，方便远程访问：  
+为了方便远程访问，安装shh，详情如下：  
 `sudo apt-get install openssh-server`  
 2019年第一篇文章，两个多小时，本来上个月写，忙碌着忘记了。  
 时间：2019年1月12日  
