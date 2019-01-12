@@ -36,11 +36,11 @@ pytorch，其下载地址和安装方式见[[4]](https://pytorch.org/)
 安装完成后，为了以后安装的三方包的速度，需要更改conda源，命令和配置如下。  
 `gedit ~/.condarc`  
 <code>  
-channels:    
-&#8195;&#8195;https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free  
-&#8195;&#8195;https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main  
-&#8195;&#8195;defaults  
-show_channel_urls: true
+channels:<br/>
+&#8195;&#8195;https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free<br/>
+&#8195;&#8195;https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main<br/>
+&#8195;&#8195;defaults<br/>
+show_channel_urls: true<br/>
 </code>  
 接下来利用source命令对pytorch虚拟环境进行激活，命令详情如下。  
 `source activate pytorch`  
@@ -60,13 +60,15 @@ trusted-host = mirrors.aliyun.com
 `pip install torch torchvision`
 <p>  
 <font color="" face="黑体">
-*&#8195;&#8195;注意：用conda装pytorch，也能成功但是版本会<font color="#FF69B4">比较低</font>，有些函数和属性不支持，建议用pip安装。*
+*
+&#8195;&#8195;注意：用conda装pytorch，也能成功但是版本会<font color="#FF69B4">比较低</font>，有些函数和属性不支持，建议用pip安装。
+*
 </font>
 </p>
 接下来进行验证，如果显示相关版本，则pytorch安装成功，否则则需重装，命令详情如下。  
 `import torch`  
 `torch.__version__`  
-最后根据自身需要安装ipython和jupyter，命令详情如下。
+最后根据自身需要安装ipython和jupyter，命令详情如下。<br/>
 `pip install ipython`  
 `pip install jupyter`  
 最后安装shh，方便远程访问：  
