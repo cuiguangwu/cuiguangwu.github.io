@@ -46,20 +46,20 @@ show_channel_urls: true
 再接下来更改pip的源，命令详情如下。  
 sudo mkdir ~/.pip/  
 sudo gedit ~/.pip/pip.conf  
-***
 pip.conf内容如下：  
 [global]  
 index-url = http://mirrors.aliyun.com/pypi/simple  
 [install]  
 trusted-host = mirrors.aliyun.com
-***
+<p>
 然后利用pip list进行查看包的版本包括pip的版本，如果版本太低则需要进行更新，pip更新命令详情如下，其他的类似。  
+</p>
 `pip  install --upgrade pip`  
 最后安装pytorch，命令详情如下：  
 `pip install torch torchvision`
-***
+<p>
 &#8195;&#8195;注意：用conda装pytorch，也能成功但是版本会<font color="#FF69B4">比较低</font>，有些函数和属性不支持，建议用pip安装。
-***
+</p>
 接下来进行验证，如果显示相关版本，则pytorch安装成功，否则则需重装，命令详情如下。  
 `import torch`  
 `torch.__version__`  
