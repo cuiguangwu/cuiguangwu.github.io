@@ -1,6 +1,6 @@
 ## Leetcode-1850-[Department Top Three Salaries](https://leetcode.com/problems/department-top-three-salaries)  
 
-Runtime: 330 ms, faster than 99.95% of MySQL online submissions for Department Top Three Salaries.
+**Runtime: 330 ms, faster than 99.95% of MySQL online submissions for Department Top Three Salaries.**
 
 1. Initial: `SELECT @Rank := 0, @Sal := null, @Type := null`
 
