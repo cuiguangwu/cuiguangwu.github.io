@@ -34,3 +34,4 @@ func traversal(res, nums []int, positions map[int]int){
         note = i
     } 
 }
+```
